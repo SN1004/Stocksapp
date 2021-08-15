@@ -1,0 +1,73 @@
+@import "../colors";
+@import "../fonts";
+
+.header {
+  padding: 24px;
+  background-color: $color-primary-dark;
+}
+
+.text-hover {
+  text-decoration: none;
+  color: $color-accent-light;
+}
+
+.title {
+  color: $color-text-light;
+  font-size: $font-size-banner;
+  display: inline;
+  vertical-align: middle;
+  margin-left: 600px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.title:hover {
+  @extend .text-hover;
+}
+
+.button {
+  float: right;
+  margin: 0 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: $color-text-light;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.button:hover {
+  @extend .text-hover;
+}
+
+.dropdownTitle{
+  // margin-top:500px;
+  // margin-left: 700px;
+  font-family: Georgia;
+  font-size: 25px;
+  color: rgb(229, 153, 153);
+}
+
+.dropdownItems{
+  font-family: sans-serif;
+  color: rgb(201, 73, 73);
+  font-size: 20px;
+  float: inline-start;
+  margin-left: 15%;
+  font-weight: 700;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.dropdownItems:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+.line{
+	border-top: 1px solid #8c8b8b;
+}
+
+.back{
+  float: left;
+  font-size: 5px;
+}

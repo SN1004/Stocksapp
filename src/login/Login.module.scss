@@ -1,0 +1,20 @@
+@import "../colors";
+
+.formElement {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  @extend .formElement;
+  margin-top: 8px;
+}
+
+.logincard{
+  // backgroundImage: 'url(${backlogin})',
+  // backgroundRepeat: 'no-repeat',
+  height: 100%,
+  // width: 100%
+}
+.form{
+}

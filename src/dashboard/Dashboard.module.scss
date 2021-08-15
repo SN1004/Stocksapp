@@ -1,0 +1,41 @@
+.containerParent {
+  display: flex;
+}
+
+.containerNav {
+  flex: 25%;
+  max-width: 300px;
+}
+
+.containerMain {
+  flex: 75%;
+}
+
+.containerPanes {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.dropdownTitle{
+  margin-top:500px;
+  margin-left: 700px;
+  font-family: Georgia;
+  font-size: 25px;
+  color: firebrick;
+}
+
+
+.dropdownItems{
+  font: normal;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(39, 64, 131);
+  font-size: 20px;
+}
+
+.dropdown{
+  margin-left: 700px;
+}
+
+.marign{
+  margin-top: 5000px;
+}
