@@ -1,0 +1,42 @@
+@import "../colors";
+@import "../fonts";
+
+.header {
+  padding: 3%;
+  background-color: $color-primary-dark;
+}
+
+.text-hover {
+  text-decoration: none;
+  color: $color-accent-light;
+}
+
+.title {
+  float: left;
+  margin:0 0 20px;
+  font-weight: 700;
+  font-size: 30px;
+  color: $color-text-light;
+  vertical-align: middle;
+  display: inline;
+  text-decoration: none;
+}
+
+.title:hover {
+  @extend .text-hover;
+}
+
+.button {
+  float: right;
+  margin: 0 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: $color-text-light;
+  vertical-align: middle;
+  display: inline;
+  text-decoration: none;
+}
+
+.button:hover {
+  @extend .text-hover;
+}
