@@ -11,7 +11,7 @@ import styles from "./Card.module.scss";
 export default function Card(props) {
   return (
     <div className={styles.card}>
-      <h2>{props.title}</h2>
+      <a className={styles.title}>{props.title}</a>
       {props.children}
     </div>
   );
