@@ -57,7 +57,7 @@ export default function LandingPage() {
             I chose two popular web technologies to cover
             fundamental concepts used in full-stack projects: <b> Spring </b> and <b>React</ b>.
             These allowed us to construct the frontend and backend within Ten days.
-            The potential to rapidly develop and scale ideas on the web is ideal
+            The potential to rapidly develop and scale idea on the web is ideal
             for our future entrepreneurial ventures and personal projects.
           </p>
         </LandingSection>
