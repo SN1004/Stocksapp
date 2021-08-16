@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import Header from '../dashboard/Header';
 import TextField from '@material-ui/core/TextField';
 import { Input, InputLabel, Select } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -7,11 +7,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import styles from './Platform.modules.scss'
 import Card from '../common/Card';
 import Button from './Button';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControl from '@material-ui/core/FormControl';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import Checkbox from '@material-ui/core/Checkbox';
 
 export default function SimpleSelect() {

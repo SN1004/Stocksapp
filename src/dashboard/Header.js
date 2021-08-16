@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
  * Header used on the landing page.
  */
 
-const link = "/landing/Platform"
+const link = "/dashboard"
 export default function Header() {
   return (
     <header className={styles.header}>
@@ -19,16 +19,16 @@ export default function Header() {
       <Link to={link} className={styles.dropdownItems}>
         Purple
       </Link>
-      <Link to="/landing/Platform" className={styles.dropdownItems}>
+      <Link to={link} className={styles.dropdownItems}>
         Flipkart
       </Link>
-      <Link to="/landing/Platform" className={styles.dropdownItems}>
+      <Link to={link} className={styles.dropdownItems}>
         Amazon
       </Link>
-      <Link to="/landing/Temp" className={styles.dropdownItems}>
+      <Link to={link} className={styles.dropdownItems}>
         Myntra
       </Link>
-      <Link to="/landing/Temp" className={styles.dropdownItems}>
+      <Link to={link} className={styles.dropdownItems}>
         1mg
       </Link>
       <hr className={styles.line}/>

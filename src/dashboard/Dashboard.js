@@ -54,24 +54,7 @@ export default class Dashboard extends React.Component {
         <main className={styles.containerMain}>
         <Header />
           <div className={styles.containerPanes}>
-          {/* <a class="menu-item dropdown">
-            <a title="Platforms" className={styles.dropdownTitle}>Platforms</a>
-            <span class="dropdown-toggle shapely-dropdown" data-toggle="dropdown" >
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </span>
-            <ul role="menu" class=" dropdown-menu">
-            <li class="menu-item" className={styles.dropdown} >
-              <a title="Purple" href="../landing/Temp" className={styles.dropdownItems}>Purple</a></li>
-            <li class="menu-item" className={styles.dropdown}>
-              <a title="Amazon" href="../landing/Temp"className={styles.dropdownItems}>Amazon</a></li>
-            <li class="menu-item"className={styles.dropdown}>
-              <a title="Flipkart" href="../landing/Temp"className={styles.dropdownItems}>Flipkart</a></li>
-            <li class="menu-item"className={styles.dropdown}>
-              <a title="Myntra" href="../landing/Temp"className={styles.dropdownItems}>Myntra</a></li>
-            <li class="menu-item"className={styles.dropdown}>
-              <a title="1mg" href="../landing/Temp"className={styles.dropdownItems}>1mg</a></li>
-              </ul>
-            </a> */}
+          
           </div>
         </main>
       </div>

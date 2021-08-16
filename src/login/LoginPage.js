@@ -85,12 +85,6 @@ export default class LoginPage extends React.Component {
     return (
       <div>
         <Header />
-        {/* <ImageBackground
-        style={{flex: 1}}
-        source={{
-            uri:
-            'https://www.toptal.com/designers/subtlepatterns/patterns/moroccan-flower-dark.png',
-            }}> */}
           <div>
             <FormLayout  >
               <Card title="Login">
