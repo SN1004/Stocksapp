@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from '../dashboard/Header';
 import TextField from '@material-ui/core/TextField';
-import { Input, InputLabel, Select } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { InputLabel, Select } from '@material-ui/core';
 import MenuItem from '@material-ui/core/MenuItem';
 import styles from './Platform.modules.scss'
 import Card from '../common/Card';
@@ -12,7 +11,6 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 
 export default function SimpleSelect() {
-    const classes = makeStyles();
     const [ReportType, setReportType] = React.useState('');
     const handleChange = (event) => {
         console.log(event);
@@ -23,17 +21,26 @@ export default function SimpleSelect() {
         console.log(event);
         setOrderStatus(event.target.value);
     };
-    const [state, setState] = React.useState({
+    const [Warehousestatus, setWarehouseState] = React.useState({
     Warehouse1: false,
     Warehouse2: false,
     Warehouse3: false,
-    Combined: false,
     });
     const handleChange2 = (event) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
+    setWarehouseState(
+        { ...Warehousestatus, [event.target.name]: event.target.checked });
+            console.log(event.target.value)
     };
-    const { Warehouse1, Warehouse2, Warehouse3,Combined} = state;
-    const error = [Warehouse1, Warehouse2, Warehouse3,Combined].filter((v) => v).length !== 2;
+    const { Warehouse1, Warehouse2, Warehouse3} = Warehousestatus;
+    const [Combinecheck, setCombinecheck] = React.useState({
+    Combined: false,
+    });
+    const handleChange3 = (event) => {
+    setCombinecheck(
+        { ...Combinecheck, [event.target.name]: event.target.checked });
+            console.log(event.target.value)
+    };
+    const {Combined} = Combinecheck;
             return (
                 <div>
                 <Header/>
@@ -97,28 +104,29 @@ export default function SimpleSelect() {
                     <InputLabel>WareHouses</InputLabel>
                         <FormGroup>
                         <FormControlLabel
-                        control={<Checkbox checked={Warehouse1} onChange={handleChange2} name="Warehouse1" />}
+                        control={<Checkbox checked={Warehouse1} onChange={handleChange2} name="Warehouse1" value="W1"/>}
                         label="Warehouse1"
                         />
                         <FormControlLabel
-                        control={<Checkbox checked={Warehouse2} onChange={handleChange2} name="Warehouse2" />}
+                        control={<Checkbox checked={Warehouse2} onChange={handleChange2} name="Warehouse2" value="W2"/>}
                         label="Warehouse1"
                         />
                         <FormControlLabel
-                        control={<Checkbox checked={Warehouse3} onChange={handleChange2} name="Warehouse3" />}
+                        control={<Checkbox checked={Warehouse3} onChange={handleChange2} name="Warehouse3" value="W3"/>}
                         label="Warehouse1"
                         />
                         </FormGroup>
                         <InputLabel>Combined</InputLabel>
                         <FormGroup>
                         <FormControlLabel
-                        control={<Checkbox checked={Combined} onChange={handleChange2} name="Combined" />}
+                        control={<Checkbox checked={Combined} onChange={handleChange3} name="Combined" value="Combine"/>}
                         label="Combined"
                         />
                         </FormGroup>
                         <Button
                         id="submit"
                         className={styles.button}
+                        // OnClick
                         >
                         Submit
                         </Button>

@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>
-        Stocksapp
+        Minimalist
       </h1>
       <Link to="/login" className={styles.button}>
         Logout

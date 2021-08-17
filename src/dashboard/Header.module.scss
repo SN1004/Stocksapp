@@ -2,7 +2,7 @@
 @import "../fonts";
 
 .header {
-  padding: 2.5%;
+  padding: 1%;
   background-color: $color-primary-dark;
 }
 
@@ -11,22 +11,26 @@
   color: $color-accent-light;
 }
 
+
 .title {
   color: $color-text-light;
-  float: left;
-  font-size: 30px;
-  vertical-align: middle;
-  text-decoration: none;
+  font-size: $font-size-banner;
   display: inline;
+  vertical-align: middle;
+  margin-left: 5px;
+  font-size: 30px;
+  text-decoration: none;
 }
+
 
 .title:hover {
   @extend .text-hover;
 }
 
 .button {
-  float: right;
+  float: none;
   margin: 0 20px;
+  margin-left: 6%;
   font-weight: 700;
   font-size: 20px;
   color: $color-text-light;
@@ -35,6 +39,21 @@
 }
 
 .button:hover {
+  @extend .text-hover;
+}
+
+
+.buttonlogin {
+  float: right;
+  margin: 0 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: $color-accent-dark;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.buttonlogin:hover {
   @extend .text-hover;
 }
 

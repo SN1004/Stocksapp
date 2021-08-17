@@ -9,9 +9,7 @@ import FormLayout from "./FormLayout";
 import axios from "../api/axios";
 import Cookies from "js-cookie";
 import { Redirect } from "react-router-dom";
-import backlogin from "../common/backlogin.png";
-
-
+import image from "../common/backlogin.png"
 const headers = {
   "content-type": "application/json",
 };
@@ -85,8 +83,8 @@ export default class LoginPage extends React.Component {
     return (
       <div>
         <Header />
-          <div>
-            <FormLayout  >
+        <body style={{ backgroundImage: `url(${image})`,backgroundRepeat:`no-repeat`}}>
+            <FormLayout style={{}}>
               <Card title="Login">
                 <TextField
                   id="username"
@@ -110,8 +108,9 @@ export default class LoginPage extends React.Component {
                 </Button>
               </Card>
             </FormLayout>
-          </div>
+          </body>
       </div>
+      
     );
   }
 

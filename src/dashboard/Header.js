@@ -11,27 +11,27 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>
-        Stocks Market App
+        Minimalist
       </h1>
-      <Link to="/login" className={styles.button}>
+      <Link to="/login" className={styles.buttonlogin}>
         Logout
       </Link>
-      <Link to={link} className={styles.dropdownItems}>
+      <Link to={link} className={styles.button}>
         Purple
       </Link>
-      <Link to={link} className={styles.dropdownItems}>
+      <Link to={link} className={styles.button}>
         Flipkart
       </Link>
-      <Link to={link} className={styles.dropdownItems}>
+      <Link to={link} className={styles.button}>
         Amazon
       </Link>
-      <Link to={link} className={styles.dropdownItems}>
+      <Link to={link} className={styles.button}>
         Myntra
       </Link>
-      <Link to={link} className={styles.dropdownItems}>
+      <Link to={link} className={styles.button}>
         1mg
       </Link>
-      <hr className={styles.line}/>
+      {/* <hr className={styles.line}/> */}
       {/* <Link to="/register" className={styles.button}>
         Register
       </Link> */}
